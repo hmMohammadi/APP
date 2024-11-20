@@ -1,0 +1,27 @@
+p {
+    margin: 0;
+}
+.row {
+    border: 5px solid navy;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+
+}
+.box {
+    width:100px;
+}
+.box1 {
+    background-color: aquamarine;
+}
+.box2 {
+    background-color:lightpink;
+}
+.box3 {
+    background-color: lavender;
+}
+.box4 {
+    background-color: yellow;
+}

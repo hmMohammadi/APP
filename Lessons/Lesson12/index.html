@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This meta tag enforces a set of characters we can use (contains alphabet, numbers, symbols, other languages, etc) -->
+    <meta charset="UTF-8">
+    <!-- This is useful for responsive websites, but we will talk more about this in future. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+</head>
+<body>
+    <header>
+        <h1>The Hollywood Reporter</h1>
+    </header>
+    <nav>
+        <!-- # is a placeholder for links. we don't know where the link will go so # is fine. -->
+        <a href="#">News</a>
+        <a href="#">Film</a>
+        <a href="#">TV</a>
+        <a href="#">Awards</a>
+        <a href="#">Lifestyle</a>
+    </nav>
+    <!-- <main> will contain the main content. The article, the headline, the sidebar, etc. -->
+    <main>
+        <div class="breadcrumbs">
+            <a href="#">Home</a> >
+            <a href="#">Movies</a> >
+            <a href="#">Movie News</a>
+        </div>
+        <!-- The main headline of the page -->
+        <h2>"Moana 2" Scores Record First-Day Advance Ticket Sales</h2>
+        <!-- The secondary headline of the page -->
+        <h3>The Disneyy animation hits theaters over Thanksgiving and has alread been dubbed 'Moanapocalypse' by box office pundits.</h3>
+        <!-- You can use a <div> when there is no semantic tag like <nav> or <main> etc for a "box" -->
+        <div class="byline">
+            <p>By Pamela McClintock</p>
+            <p>October 29, 2024</p>
+        </div>
+        <!-- At this point, there is going to be a split between two sides. Left side is main article, Right side is a sidebar. So we need a flexbox!! Flexbox requires a PARENT element. so we create article-container -->
+        <div class="article-container">
+            <!-- This div will contain the left side of the article -->
+            <div class="article">
+                <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/05/MOANA2-ONLINE-USE-trailer1_016.50_0004_2k-copy.jpg" alt="Moana"/>
+
+                <p>Strong winds are benefiting Moana 2 as it sails into shore.</p>
+                <p>The Walt Disney Animation Studios tentpole set records Monday in terms of first-day advance ticket sales, according to online retailer Fandango.</p>
+                <p>It sold more tickets than any other 2024 animated film, including fellow Disney/Pixar summer 2024 blockbuster Inside Out 2. It’s also the fourth-best showing of the year for any movie behind Deadpool & Wolverine, Wicked and Dune: Part 2. (It’s no wonder why box office observers have bequeathed the sequel with its own special moniker: “Moanapocalpyse.”)</p>
+                <p>The event pic hits theaters Nov. 27, the Wednesday before Thanksgiving, and five days after Paramount’s Gladiator II and Universal’s Wicked open in North America. Theater owners are counting on the trio of highly anticipated tentpoles to shore up ticket sales after a tough start to the third quarter.</p>
+            </div>
+
+            <!-- This div will contain the right side of the article -->
+            <div class="sidebar">
+                <h3>Most Popular Articles</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Code written by Nayeon Kim.
+    </footer>
+</body>
+</html>
