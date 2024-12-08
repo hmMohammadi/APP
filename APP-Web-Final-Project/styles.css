@@ -12,6 +12,7 @@ nav {
     justify-content: right; 
     gap: 20px;
     padding-right: 20px;
+    position: fixed;
 }
 
 a:hover {
@@ -25,10 +26,16 @@ nav a {
 }
 body {
     background-color: #bde0fe;
+    margin: 0;  
+    font-family: "Trirong", serif;  
 }
 
 .disc-container {
     display: flex;
+    background-color: #a2d2ff;
+    border: 1px solid #ddd; /* مرز برای نمایان‌تر شدن */  
+    border-radius: 8px; /* گوشه‌های گرد */  
+    margin: 20px;
 }
 .text {
     font-family: "Trirong", serif;
@@ -66,10 +73,30 @@ h1 {
     
 }
 
-.first-row {
-    display: flex;
+.row {  
+    display: flex; /* فعال کردن Flexbox */  
+    justify-content: space-between; /* تقسیم فضای خالی بین عناصر */  
+    width: 100%; /* 100% عرض */  
+    padding: 20px; /* فاصله داخلی */  
+    box-sizing: border-box; /* شامل padding در اندازه گیری */  
+}  
+
+.houseplant {  
+    flex: 1; /* هر عنصر به طور مساوی فضای موجود را پر می‌کند */  
+    margin: 10px; /* فاصله بین عناصر */  
+    border: 1px solid #ddd; /* مرز برای نمایان‌تر شدن */  
+    border-radius: 8px; /* گوشه‌های گرد */  
+    overflow: hidden; /* پنهان کردن قسمت‌های اضافی */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* سایه داخلی */  
+    background-color: #a2d2ff;
+}  
+
+.h-image img {  
+    width: 100%; /* تصویر را به اندازه کامل عنصر می‌کند */  
+    height: auto; /* حفظ نسبت ابعاد تصویر */  
+}  
+
+.h-text {  
+    padding: 10px; /* فاصله داخلی برای محتوای متن */  
 }
 
-.row {
-    display: flex;
-}
