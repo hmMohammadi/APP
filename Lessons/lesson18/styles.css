@@ -1,0 +1,80 @@
+/* "*" means to select ALL HTML elements in the HTML filed linked to this CSS file */
+* {
+    /* ALL elements now will not let padding or border increase their width. */
+    box-sizing: border-box;
+}
+.row1 {
+    background-color: mistyrose;
+    margin-bottom: 20px;
+    /* width: 800px; */
+    /* % is the % of its nearest ancestor that has a set width. */
+    width: 80%;
+    max-width: 1000px;
+
+    border: 5px solid navy;
+    padding: 20px;
+    /* box-sizing bordder box makes the padding and border NOT increase the width of this element. */
+    box-sizing: border-box;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.row2 {
+	border: 5px solid navy;
+}
+
+.box1 {
+    background-color: lightpink;
+}
+.box2 {
+    background-color: lavender;
+}
+.box3 {
+    background-color:lightgreen;
+}
+.box4 {
+    background-color: lightyellow;
+}
+
+/* Media queries. All the CSS above this point is for mobile screen sizes. */
+
+/* Additional CSS for screen sizes 768px (tablet) and above */
+@media (min-width: 768px) {
+    .row1 {
+        background-color: yellow;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+/* Additional CSS for screen sizes 1024px (laptop) and above  */
+@media (min-width: 1024px) {
+    .row1 {
+        background-color: lightgreen;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .row2 {
+        display: flex;
+        gap: 10px;
+    
+        /* If row2 seems to be getting TOO large, you can set a max-width that makes it not get bigger thatn 1200px */
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row2 .box {
+        /* width: 100px; */
+        /* flex-basis is like width.  */
+        flex-basis: 25%;
+    }
+}
+
+/* Additional CSS for screen size 1280px (large laptop screen) and above */
+@media (min-width: 1280px) {
+    .row1 {
+        background-color: blueviolet;
+    }
+}

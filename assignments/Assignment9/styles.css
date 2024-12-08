@@ -1,0 +1,88 @@
+body {
+    background-color: #caf0f8;
+}
+
+h1 {
+    text-align: center;
+    -webkit-text-fill-color: #03045e;
+}
+
+p {
+    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#topic {
+    margin-left: 50px;
+    -webkit-text-fill-color: #03045e;
+}
+
+.topic-container {
+    background-color: #90e0ef;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.audience {
+    -webkit-text-fill-color: #03045e;
+    margin-left: 50px;
+}
+
+.audience-container {
+    background-color: #00b4d8;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+
+}
+
+.design {
+    -webkit-text-fill-color: #03045e;
+    margin-left: 50px;
+}
+
+.design-container {
+    background-color: #0077b6;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+
+}
+
+ol {
+    margin-left: 30px;
+}
+.scope {
+    -webkit-text-fill-color: #03045e;
+    margin-left: 50px;
+}
+
+.scope-container {
+    background-color: #90e0ef;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+
+}
+
+.image {
+    margin-left: 50px;
+}

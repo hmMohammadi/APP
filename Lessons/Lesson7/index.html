@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lesson #07</title>
+        <style>
+           #container {
+                /*In a CSS rule, the word on the left side of colon (:) is called a CSS Property. The word on the right side of colon is called a CSS Value.*/
+                background-color: lightgreen;
+           }
+
+           label {
+            display: block;
+           }
+
+           .inline-label {
+            display: inline;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="title">🍵 Tea Order Form</h1>
+            <p class="desc">Please submit this form to order delicious tea.</p>
+            <form action="confirm.html" method="GET">
+                <div>   <label for="full-name">Full Name: </label>
+                        <input id="full-name" type="text" placeholder="Masooma Ahmadi" name="full-name" required minlength="3"/>
+
+                </div>
+                <div>   
+                    <label for="email">Email Address:</label>
+                    <input id="email" type="email" placeholder="Masooma@usc.edu" name="email-address" required>
+                </div>
+                <div>
+                     <label for="password">Password:</label>
+                    <input id="password" type="password" name="password">
+                </div>
+
+                <div> 
+                    <label for="cups">How many cups of tea would you like to order?</label>
+                    <input id="cups" type="number" name="cups" min="1">
+                </div>
+
+                <div>
+                    <label for="city">What city do you live in?</label>
+                    <select id="city" name="city">
+                        <option value="kabul">Kabul</option>
+                        <option value="herat">Herat</option>
+                        <option value="ghore">Ghore</option>
+                        <option value="mazar">Mazar</option>
+                    </select>
+            </div>
+
+            <div>
+                <label>What type of tea would you like to order?</label>
+
+                <input id="green-tea" type="radio" name="type-of-tea" value="green-tea">
+                <label class="inline-label" for="green-tea">Green Tea</label>
+
+                <input id="black-tea" type="radio" name="type-of-tea" value="black-tea">
+                <label class="inline-label" for="black-tea">Black Tea</label>
+            </div>
+
+            <div>
+                <label>Would you like to add any toppings?</label>
+
+                <input id="honey" type="checkbox" name="toppings" value="honey">
+                <label class="inline-label" for="honey" >Honey</label>
+
+                <input id="milk" type="checkbox" type="checkbox" name="toppings" value="milk">
+                <label class="inline-label" for="milk">Milk</label>
+            </div>
+
+                <label for="comments">Additional Comments on your Order:</label>
+                <textarea id="comments" name="comments"></textarea>
+            
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+       </div>
+    </body>
+</html>
+
+
+
+
+
+
+
