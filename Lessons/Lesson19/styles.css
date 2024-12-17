@@ -1,0 +1,155 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #FFE347;
+    font-size: 14px;
+
+    /* CSS Transition properties. If .box ever changes, these transition properties come into effect. */
+    /* transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 2s; */
+
+    /* Shorthand way to write transition - can write all three transition properties in one line. Order matters. First is the property, then the duration, and finally the delay. */
+    /* transition: background-color 1s 0s, width 2s 0s, font-size 0.5s 0.5s; */
+
+    /* If we don't care and just want any properties to have a transition effect, and they al have the same duration and delay,  we can use "all" like this */
+    transition: all 0.5s 0s;
+}
+.box:hover {
+    background-color: red;
+    width: 500px;
+    font-size: 40px;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: #EF767A;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+    /* CSS transform can change an element in many ways. First example is rotate. */
+    transform: rotate(45deg);
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: #EF767A;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+
+    /* Scale can make an element bigger or smaller, but keeps its proportions. For example, scale(2) means make the element 2x bigger than original size. */
+    transform: scale(0.5);
+}
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: #EF767A;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+
+    transform: skew(10deg, 10deg);
+}
+.box5 {
+    width: 200px;
+    height: 200px;
+    background-color: #EF767A;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+
+    /* translate moves an element along the x/y axis */
+    transform: translate(0px, -200px);
+}
+.clear {
+    clear: both;
+}
+.box6 {
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    background-color: #7D7ABC;
+
+    /* By default, scale 1 means no scaling, no translating. */
+    transform: scale(1) translate(0,0) rotate(0,0);
+    transition: all 0.5s 0s;
+}
+.box6:hover {
+    /* When box6 is hovered, transform the box to scale 2, move the box 200px, and rotate the box 360deg */
+    transform: scale(2) translate(200px, 0px) rotate(360deg);
+}
+.img-container {
+    width: 500px;
+    margin-top: 20px;
+    position: relative;
+}
+.img-container img {
+    width: 100%;
+    display: block;
+}
+.img-container .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    /* By default, hide the overlay using opacity */
+    opacity: 0;
+    transition: opacity 1s 0s;
+}
+.img-container:hover .overlay {
+    opacity: 1;
+}
+.img-container p {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+
+    /* By default, scale up the Pikachu text to be big */
+    transform: scale(2);
+    transition: transform 1s 0s;
+}
+.img-container:hover p {
+    transform: scale(1);
+}
+.img-container a {
+    text-decoration: none;
+    display: block;
+    background-color: #900;
+    color: #FFF;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* By default, hide the red button */
+    opacity: 0;
+    /* add a little delay so the red buton shows up later */
+    transition: opacity 1s 1s;
+}
+.img-container:hover a {
+    opacity: 1;
+}
+#button {
+    margin-top: 50px;
+}
+.box7 {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 400px;
+}
